@@ -30,7 +30,7 @@ spec:
         persistence:
           enabled: true
   destination:
-    name: loft-new-project-vcluster-swe-cluster
+    name: loft-new-project-vcluster-rnm-cluster
     namespace: n8n
   syncPolicy:
     automated: 
