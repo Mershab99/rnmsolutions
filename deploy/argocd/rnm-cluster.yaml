@@ -11,7 +11,7 @@ spec:
   # Source of the application manifests
   source:
     ##TODO: secret
-    repoURL: https://gitlab.com/mershab-homelab/mws/mershab-web-services.git
+    repoURL: https://github.com/Mershab99/rnmsolutions.git
     ##TODO: secret
     targetRevision: 'base' #Should be based on environment
     path: 'deploy/apps'
