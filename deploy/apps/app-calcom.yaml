@@ -27,8 +27,8 @@ spec:
           ingress:
             enabled: true
             className: "nginx"
-            annotations: 
-              nginx.ingress.kubernetes.io/use-proxy-protocol: "true"
+            annotations: {}
+              #nginx.ingress.kubernetes.io/use-proxy-protocol: "true"
             hosts:
               - host: schedule.rnmsolutions.ca
                 paths:
@@ -38,7 +38,7 @@ spec:
 #                  path: /api/(.*)
 #                  pathType: ImplementationSpecific
   destination:
-    server: https://kubernetes.default.svc  # Adjust this for remote clusters
+    name: loft-new-project-vcluster-swe-cluster
     namespace: calcom-stack
   syncPolicy:
     automated:
@@ -62,7 +62,7 @@ spec:
     directory:
       recurse: true
   destination:
-    name: in-cluster
+    name: loft-new-project-vcluster-swe-cluster
     namespace: calcom-stack
   syncPolicy:
     automated: 
