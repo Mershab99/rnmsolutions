@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: calcom-stack-scheduler
+  name: calcom-stack-rmn
   namespace: argocd  # Ensure this is the namespace where Argo CD is installed
 spec:
   project: default
@@ -51,7 +51,7 @@ spec:
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: calcom-stack-resources
+  name: calcom-stack-rmn-resources
   namespace: argocd  # Ensure this is the namespace where Argo CD is installed
 spec:
   project: "default"
