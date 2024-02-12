@@ -1,0 +1,26 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+    ##TODO: cvhange name
+  name: bootstrap-rnm
+  namespace: argocd
+spec:
+  # The project the application belongs to.
+  project: default
+  # Source of the application manifests
+  source:
+    ##TODO: secret
+    repoURL: https://gitlab.com/mershab-homelab/mws/mershab-web-services.git
+    ##TODO: secret
+    targetRevision: 'base' #Should be based on environment
+    path: 'deploy/apps'
+  # Destination cluster and namespace to deploy the application
+  destination:
+    name: in-cluster
+    namespace: argocd
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
+---
