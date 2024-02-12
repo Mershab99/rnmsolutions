@@ -30,7 +30,7 @@ spec:
             annotations: 
               nginx.ingress.kubernetes.io/use-proxy-protocol: "true"
             hosts:
-              - host: schedule-test.mershab.xyz
+              - host: schedule.rnmsolutions.ca
                 paths:
                   - path: /
                     pathType: Prefix
