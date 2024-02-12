@@ -57,7 +57,7 @@ spec:
   project: "default"
   source:
     repoURL: https://gitlab.com/mershab-homelab/mws/mershab-web-services.git
-    targetRevision: "base" #Based on environment
+    targetRevision: "main" #Based on environment
     path: 'deploy/secrets/calcom/'
     directory:
       recurse: true
