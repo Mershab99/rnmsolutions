@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: n8n-automation
+  name: n8n-rnm
   namespace: argocd
 spec:
   project: default
